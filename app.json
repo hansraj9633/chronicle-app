@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "Chronicle",
+    "slug": "chronicle",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "backgroundColor": "#1a1208"
+    },
+    "android": {
+      "package": "com.yourname.chronicle",
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED",
+        "VIBRATE"
+      ]
+    },
+    "plugins": [
+      ["expo-notifications", {
+        "color": "#1a1208"
+      }],
+      "expo-local-authentication",
+      ["expo-image-picker", {
+        "photosPermission": "Chronicle needs photo access to insert images in your posts."
+      }]
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+node_modules/
+.expo/
+dist-test/
+expo-config-log.txt
+expo-start.out
+expo-start.err
