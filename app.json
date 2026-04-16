@@ -9,20 +9,34 @@
       "backgroundColor": "#1a1208"
     },
     "android": {
-      "package": "com.yourname.chronicle",
+      "package": "com.hansraj.chronicle",
       "permissions": [
-        "RECEIVE_BOOT_COMPLETED",
-        "VIBRATE"
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.VIBRATE",
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.USE_FINGERPRINT",
+        "android.permission.RECORD_AUDIO"
       ]
     },
     "plugins": [
-      ["expo-notifications", {
-        "color": "#1a1208"
-      }],
+      [
+        "expo-notifications",
+        {
+          "color": "#1a1208"
+        }
+      ],
       "expo-local-authentication",
-      ["expo-image-picker", {
-        "photosPermission": "Chronicle needs photo access to insert images in your posts."
-      }]
-    ]
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Chronicle needs photo access to insert images in your posts."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "b56f8bd7-0c8b-4323-a8a6-5a6d42179628"
+      }
+    }
   }
 }
